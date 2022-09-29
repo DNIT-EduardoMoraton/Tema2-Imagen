@@ -24,5 +24,40 @@ namespace Tema3_Imagen
         {
             InitializeComponent();
         }
+
+        private void opacidadAltaRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            img1Image.Opacity = 1;
+        }
+
+        private void opacidadMediaRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            img1Image.Opacity = 0.5;
+        }
+
+        private void opacidadBajaRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            img1Image.Opacity = 0.1;
+        }
+
+        private void ajusteFillRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            img1Image.Stretch = Stretch.Fill;
+        }
+
+        private void ajusteUniformRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            img1Image.Stretch = Stretch.Uniform;
+        }
+
+        private void ajusteUniformToFillRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            img1Image.Stretch = Stretch.UniformToFill;
+        }
+
+        private void ajusteNoneRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            img1Image.Stretch = Stretch.None;
+        }
     }
 }

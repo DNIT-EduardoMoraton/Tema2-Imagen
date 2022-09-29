@@ -5,9 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_Imagen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tema3-Imagen" Height="450" Width="800" Icon="photo-photography-image-picture_108525.ico">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="360" Margin="50,25,0,0" VerticalAlignment="Top" Width="280" Source="episodioIV.jpg"/>
+        <Image x:Name="img1Image" HorizontalAlignment="Left" Height="360" Margin="50,25,0,0" VerticalAlignment="Top" Width="280" Source="episodioIV.jpg" Stretch="Fill"/>
+        <RadioButton x:Name="opacidadAltaRadioButton" Content="Alta" HorizontalAlignment="Left" Margin="590,70,0,0" VerticalAlignment="Top" GroupName="opacidad" Checked="opacidadAltaRadioButton_Checked" IsChecked="True"/>
+        <RadioButton x:Name="opacidadMediaRadioButton" Content="Media" HorizontalAlignment="Left" Margin="590,90,0,0" VerticalAlignment="Top" GroupName="opacidad" Checked="opacidadMediaRadioButton_Checked"/>
+        <RadioButton x:Name="opacidadBajaRadioButton" Content="Baja" HorizontalAlignment="Left" Margin="590,110,0,0" VerticalAlignment="Top" GroupName="opacidad" Checked="opacidadBajaRadioButton_Checked"/>
+        <RadioButton x:Name="ajusteFillRadioButton" Content="Relleno (Fill)" HorizontalAlignment="Left" Margin="590,185,0,0" VerticalAlignment="Top" GroupName="ajuste" Checked="ajusteFillRadioButton_Checked" IsChecked="True"/>
+        <RadioButton x:Name="ajusteUniformToFillRadioButton" Content="Relleno Uniforme (UniformToFill)" HorizontalAlignment="Left" Margin="590,225,0,0" VerticalAlignment="Top" GroupName="ajuste" Checked="ajusteUniformToFillRadioButton_Checked"/>
+        <RadioButton x:Name="ajusteUniformRadioButton" Content="Uniforme (Uniform)" HorizontalAlignment="Left" Margin="590,205,0,0" VerticalAlignment="Top" GroupName="ajuste" Checked="ajusteUniformRadioButton_Checked"/>
+        <RadioButton x:Name="ajusteNoneRadioButton" Content="Sin Ajuste (None)" HorizontalAlignment="Left" Margin="590,245,0,0" VerticalAlignment="Top" GroupName="ajuste" Checked="ajusteNoneRadioButton_Checked"/>
+        <Label Content="Opacidad" HorizontalAlignment="Left" Margin="590,15,0,0" VerticalAlignment="Top" FontFamily="Source Sans Pro Black" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Ajuste" HorizontalAlignment="Left" Margin="591,130,0,0" VerticalAlignment="Top" FontFamily="Source Sans Pro Black" FontSize="36" FontWeight="Bold"/>
 
     </Grid>
 </Window>
